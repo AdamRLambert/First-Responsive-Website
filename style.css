@@ -1,0 +1,60 @@
+main {
+display: flex;
+align-items: center;
+justify-content: center;
+height: 400pt;
+background-color: cornflowerblue;
+}
+
+section {
+    padding: 20px;
+    min-height: 50%;
+    text-align: center;
+    background-color: white;
+}
+
+
+h1 {color: white;
+font-family: 'Bebas Neue', cursive;
+font-size: 50pt;}
+
+h2 {
+font-family: 'Bebas Neue', cursive; 
+font-size: 30pt;
+}
+
+.bar1, .bar2, .bar3 {
+    margin:0 auto;
+    height: 30px;
+    width: 200px;
+}
+.bar1 {background-color: cornflowerblue;}
+
+.bar2 {background-color: darkorange;} 
+
+.bar3 {background-color: darkcyan;}
+
+.main {grid-area: main;}
+.box1 {grid-area: box1;}
+.box2 {grid-ares: box2;}
+.box3 {grid-area: box3;}
+    
+@media (min-width: 992px) {
+main {background-color:darkcyan;}    
+section {background-color: black;
+         color: white;}
+.container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1f);
+    grid-template-areas:
+    "main main main" 
+    "box1 box2 box3";
+}
+
+
+}
+
+
+
+
